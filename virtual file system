@@ -1,0 +1,11 @@
+import os
+
+def create_file(name):
+    with open(name, "w") as f:
+        f.write("Hello!")
+
+def delete_file(name):
+    os.remove(name)
+
+create_file("test.txt")
+delete_file("test.txt")
